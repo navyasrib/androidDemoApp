@@ -14,4 +14,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your name"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:height="50sp"
+            android:text=""
+            android:id="@+id/name" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:text="Login"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textAllCaps="false"
+            android:scrollHorizontally="false" />
+    </LinearLayout>
+
 </RelativeLayout>
