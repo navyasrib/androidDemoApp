@@ -13,15 +13,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    public void goToWelcomePage(View view) {
         final EditText nameField = (EditText) findViewById(R.id.name);
-        Button loginButton = (Button) findViewById(R.id.loginButton);
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
-                intent.putExtra("name", nameField.getText().toString());
-                startActivity(intent);
-            }
-        });
+        Intent intent = new Intent(getApplicationContext(), WelcomeActivity.class);
+        intent.putExtra("name", nameField.getText().toString());
+        startActivity(intent);
     }
 }
